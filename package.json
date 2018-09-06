@@ -10,7 +10,7 @@
     "test:html": "lerna run test:html",
     "publish": "cd packages/@traveloka/rps && npm publish",
     "publish:git": "lerna publish --conventional-commits --yes --skip-npm",
-    "publish:npm": "npm run publish"
+    "publish:npm": "lerna exec npm publish --since HEAD^"
   },
   "dependencies": {
     "lerna": "^3.0.0-rc.0"
